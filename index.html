@@ -4,24 +4,36 @@
 	<meta charset="UTF-8">
 	<title>CV Cá nhân của Nguyễn Danh Nam</title>
 	<link rel="stylesheet" href="style/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#xemNgay").click(function(){
+        $("#thongTin").slideToggle("slow");
+    });
+});
+</script>
 </head>
 <body>
-	<article style="background-color: tomato;border-radius: 5px;text-align: center;width: 100%;height: 40px;">
+	<article style="background-color: #3498db;color:#fff;border-radius: 5px;text-align: center;width: 100%;height: 40px;">
 		<h1>Nguyễn Danh Nam (Lập trình viên quốc tế tại Aptech)</h1>
 	</article>
 		<hr>
-		<article class="information" style="background-color: yellowgreen;width:100%;height: 800px;">
-		<div class="name" style="background-color: #2ecc71;width:100%;height: 20px;">
+		<article class="information"  style="width:100%;height: 210px;display: none;"  id="thongTin">
+		<div class="name" style="color: #fff;border-radius: 5px;background-color: tomato;width:100%;height: 40px;padding-left: 20px;padding-top: 15px">
 			<b>Tên:</b><i>	Nguyễn Danh Nam</i>
 		</div>
 		<hr>
-		<div class="grade" style="background-color: #2ecc71;width:100%;height: 20px;">
+		<div class="grade" style="color: #fff;border-radius: 5px;background-color: tomato;width:100%;height: 40px;padding-left: 20px;padding-top: 15px">
 			<b>Lớp:</b><i>	T1708I_02</i>
 		</div>
 		<hr>
-		<div class="phone" style="background-color: #2ecc71;width:100%;height: 20px;">
+		<div class="phone" style="color: #fff;border-radius: 5px;background-color: tomato;width:100%;height: 40px;padding-left: 20px;padding-top: 15px">
 			<b>Phone:</b><i>	+84886 72 27 47</i>
 		</div>
+		
 	</article>
+	<div>
+			<button id="xemNgay" style="color: #fff;border-radius: 5px;background-color: #2ecc71;width:20%;height: 45px;padding-left: 20px;padding-top: 1px;margin:auto 40%;font-size: 18px;font-weight: bold;">Xem ngay</button>
+		</div>
 </body>
 </html>
